@@ -17,7 +17,7 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 	public function actionPicture(){
-		$imageAddress = 'http:\\localhost\test2\images\P1000740.JPG';
+		$imageAddress = 'http:\\localhost\test2\images\Ati.JPG';
 		$this->render('picture',array('imageAddress'=>$imageAddress));
 	}
 	public function actionMain(){
@@ -25,8 +25,7 @@ class SiteController extends Controller
 		$user = new User;
 		if(isset($_POST['MainForm'])){
 			$model->attributes=$_POST['MainForm'];
-			$user->attributes=$_POST['MainForm'];
-			$user->id=3;
+			 $user->setAttributes($_POST['MainForm'],false);
 			if($model->validate())
 				echo "thank you!";
 			$user->save();
