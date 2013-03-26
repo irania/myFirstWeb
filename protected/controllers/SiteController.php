@@ -17,7 +17,7 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 	public function actionPicture(){
-		$imageAddress = 'http:\\localhost\test2\images\Ati.JPG';
+		$imageAddress = '/images/Ati.jpg';
 		$this->render('picture',array('imageAddress'=>$imageAddress));
 	}
 	public function actionMain(){

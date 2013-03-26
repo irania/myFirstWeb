@@ -16,7 +16,7 @@
 				array('label'=>'Clock', 'url'=>array('/site/clock')),
 				array('label'=>'Picture', 'url'=>array('/site/picture')),
 				array('label'=>'Form', 'url'=>array('/site/main')),
-				),
+				),'color'=>'green',
 			));
 		
 		?>

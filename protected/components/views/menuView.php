@@ -4,7 +4,7 @@
 <style>
 #mainmenu
 {
-	background:white url(css/<?php echo $this->imagefile ?>) repeat-x left top;
+	background:white url(css/<?php echo $imagefile ?>) repeat-x left top;
 }
 </style>
 
