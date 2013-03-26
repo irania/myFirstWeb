@@ -9,8 +9,8 @@ return array(
 		'application.components.*',
 	),
 	'preload'=>array('index'),
-	'modules'=>array(),
-		'import'=>array(
+	'modules'=>array('login'),
+	'import'=>array(
 		'application.models.*',
 		'application.components.*',
 	),
