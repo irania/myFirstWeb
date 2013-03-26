@@ -19,7 +19,7 @@
 				array('label'=>'Clock', 'url'=>array('/site/clock')),
 				array('label'=>'Picture', 'url'=>array('/site/picture')),
 				array('label'=>'Form', 'url'=>array('/site/main')),
-				array('label'=>'Login', 'url'=>array('/login' ), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Login', 'url'=>array('login/default/login' ), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/login/default/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				),'color'=>'green',
 			));
