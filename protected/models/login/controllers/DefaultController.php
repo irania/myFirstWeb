@@ -11,7 +11,7 @@ class DefaultController extends Controller{
 		{
 			$model->attributes=$_POST['LoginForm'];
 			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->getModule('forum')->user->returnUrl);		
+				$this->redirect(Yii::app()->getModule('login')->user->returnUrl);		
 		}
 		$this->render('login',array('model'=>$model));///?????
 	}
