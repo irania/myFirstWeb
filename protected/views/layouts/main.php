@@ -1,14 +1,17 @@
 	
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="/test2/css/main.css" />
+		<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
-				<title><?php echo CHtml::encode($this->pageTitle); ?></title>
-<link rel="stylesheet" type="text/css" href="/test2/css/main.css" />
+
 	</head>
 	<body>
 	<div class="container" id="page">
 		<div id="header">
-			<?php echo CHtml::encode(Yii::app()->name); ?>
+			<div id="logo">
+				<?php echo CHtml::encode(Yii::app()->name); ?>
+			</div>
 		</div>
 		<?php $this->widget('application.components.Menu',array(
 			'items'=>array(

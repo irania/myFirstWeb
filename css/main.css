@@ -10,7 +10,9 @@ body
 #page
 {
 	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	margin-right: 100px;
+	margin-left:100px;
 	background: #F0FFFF;
 	border: 1px solid #C9E0ED;
 }
@@ -25,6 +27,8 @@ body
 #logo
 {
 	padding: 10px 20px;
+	color: black;
+	background-image :url(logo.jpg);
 	font-size: 200%;
 }
 
